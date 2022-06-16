@@ -32,8 +32,10 @@ namespace GeradorNumerosLoteria
                 Console.WriteLine();
                 Console.WriteLine($"Jogo número {i}:");
                 GerarNumeroRandomico(numeroInicial, numeroFinal, quantidadeNumerosPorJogo);
-                Console.WriteLine();
             }
+
+            Console.WriteLine("Aperte qualquer tecla para sair...");
+            Console.ReadKey();
         }
         private static void GerarNumeroRandomico(int numeroInicial, int numeroFinal, int quantidadeNumerosPorJogo)
         {
